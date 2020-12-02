@@ -41,7 +41,6 @@ function updateExpenseReportByThree(expensesArray, n = 2020) {
   for(let i=1; i<expensesArray.length; i++){
     for(let j=2; j<expensesArray.length; j++){
       if(expensesSet.has(n-(expensesArray[i] + expensesArray[j]))){
-        console.log(expensesArray[i], expensesArray[j], n-(expensesArray[i] + expensesArray[j]))
         return expensesArray[i] * expensesArray[j] * (n-(expensesArray[i] + expensesArray[j]))
       }
     }
